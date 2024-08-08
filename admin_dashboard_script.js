@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     for (const [username, user] of Object.entries(users)) {
         const li = document.createElement('li');
-        li.innerText = `${user.name} ${username} Saldo - Rp.${formatCurrency(user.balance)}`;
+        li.innerText = `${user.name} ${username} balance - Rp.${formatCurrency(user.balance)}`;
         li.addEventListener('click', function() {
             editUser(username);
         });
