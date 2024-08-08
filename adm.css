@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.login-form {
+
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+}
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #0056b3;
+}
+
+#admin-dashboard {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#admin-dashboard h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#user-management {
+    margin-bottom: 20px;
+}
+
+#user-management h2 {
+    margin-bottom: 15px;
+}
+
+#user-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#user-list li {
+    background-color: #f9f9f9;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#user-list li:hover {
+    background-color: #e9e9e9;
+}
+
+#edit-user-form {
+    margin-top: 20px;
+}
+
+#edit-user-form h3 {
+    margin-bottom: 15px;
+}
+
+#edit-user-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#edit-user-form input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+#edit-user-form button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#edit-user-form button:hover {
+    background-color: #218838;
+}
+
+#logout-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#logout-button:hover {
+    background-color: #c82333;
+}
+
+#admin-login-message {
+    color: red;
+    margin-top: 10px;
+}
+.password-container {
+    position: relative;
+    max-width: 100%; 
+    margin-bottom: 15px; 
+}
+
+.login-form input, .password-container input[type="password"], .password-container input[type="text"] {
+    padding:10px;
+	padding-right: 0px; 
+    width: 95%; 
+    box-sizing: border-box; 
+    margin: 5px; 
+}
+
+.toggle-password {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+    color: #666;
+}
