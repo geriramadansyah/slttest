@@ -350,7 +350,7 @@ body {
   bottom: 87%;
   left:25%;
   position:absolute;
-  display: flex;
+
   align-items: center;
   justify-content: flex;
   z-index:10000;
