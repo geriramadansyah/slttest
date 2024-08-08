@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="adm.css">
+</head>
+<body>
+    <div id="admin-login-form" class="login-form">
+        <h2>Login Admin</h2>
+        <input type="text" id="admin-username" placeholder="Username">
+		<div class="password-container">
+			<input type="password" id="admin-password" placeholder="Password">
+			<i class="toggle-password" id="toggle-admin-password">👁️</i>
+		</div>        
+		<button id="admin-login-button">Login</button>
+        <p id="admin-login-message"></p>
+    </div>
+    <div id="admin-dashboard" style="display: none;">
+        <h1>Admin Dashboard</h1>
+        <div id="user-management">
+            <h2>Manage Users</h2>
+            <ul id="user-list"></ul>
+            <div id="edit-user-form" style="display: none;">
+                <h3>Edit User</h3>
+                <label for="edit-username">UserID:</label>
+                <input type="text" id="edit-username" readonly>
+				<label for="edit-name">Name:</label>
+				<input type="text" id="edit-name">
+                <label for="edit-password">Password:</label>
+                <div class="password-container">
+					<input type="password" id="edit-password">
+					<i class="toggle-password" id="toggle-edit-password">👁️</i>
+				</div>
+                <label for="edit-balance">Balance:</label>
+                <input type="number" id="edit-balance">
+                <button id="save-user-button">Save Changes</button>
+                <button id="cancel-edit-button">Cancel</button>
+            </div>
+        </div>
+        <button id="logout-button">Logout</button>
+    </div>
+    <script src="admin_dashboard_script.js"></script>
+</body>
+</html>
