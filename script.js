@@ -212,19 +212,19 @@ document.getElementById('spin-ten').addEventListener('click', function() {
 const defaultUsers = { //ID Users & Password
     'user1': {
 		name: 'user nana',
-        password: 'password1',
+        password: 'pas1',
         balance: 1500000,
         role: 'user'
     },
     'user2': {
 		name: 'Tobrut',
-        password: 'password2',
+        password: 'pas2',
         balance: 1500000,
         role: 'user'
     },
 	'user3': {
 		name: 'Duit Ni....',
-        password: 'password3',
+        password: 'pas3',
         balance: 1500000,
         role: 'user'
     }
