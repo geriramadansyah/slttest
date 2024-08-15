@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slot Machine</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="login-form" class="login-form">
+        <h2>Login</h2>
+		<div class="info-icon" id="info-icon"translate="no">?</div>
+        <div id="info-panel" class="info-panel">
+            <p>Welcome to the online gambling simulation. This site is designed only for learning and developing my programming language, site for playing slots virtually. You can place bets and see the winning results which are completely controlled by the system. The winning features in the game can be set according to a predetermined code.</p>
+			<p><strong>Main feature:</strong></p>
+			<ul>
+				<li>Games with random symbol spins with customized winning controls.</li>
+				<li>Efficient user management by admin, including the ability to access and modify user data.</li>
+				<li>Admins have full access to manage user data and view game balances and statistics.</li>
+			</ul>
+			<p><strong>Warnning:</strong> This is just an online gambling simulation. As well as reminding that all user data and game flow are regulated by the system and do not involve real money.</p>
+			<p>Only registered users obtained from the developer or can check <i data="(inspeks)">(Inspeksi)</i> this page, go to the .js section, there is user data (test data) that I entered to access the next page</p>
+			<p>This site does not using a database but only local browser storage, only you can see the changes that occur</p>
+			<p>It is not permitted to share or publish this kind of thing to lay people⚠</p>
+			<p style="text-align:center;" ><i data="inside">Don't Baper By@gryrmd_sy</i></p>
+			<button id="close-info-panel">x</button>
+        </div>
+        <input type="text" id="username" placeholder="Users ID" name="username" autocomplete="off">
+        <div class="password-container">
+		<input type="password" id="password" placeholder="Password">
+		<i class="toggle-password" id="toggle-user-password"translate="no">👁️</i>
+        </div>
+		<button id="login-button">Login</button>
+        <p id="login-message"></p>
+    </div>
+
+    <div id="slot-machine" style="display: none;">
+			<section class="header">
+				<div class="title-wrapper">
+				<h1 class="sweet-title">
+				  <span data-text="make" translate="no">make</span>
+				  <span data-text="bankrupt" translate="no">bankrupt</span>
+				</h1>
+				</div>
+			</section>
+			
+        <div class="info-icon-slot" id="info-icon-slot" translate="no">?</div>
+        <div id="info-panel-slot" class="info-panel-slot">
+            <h3>How to play</h3>
+			<p>To spin the slot, click the "Spin" button to spin the reels.  Each selected bet will receive a different additional win. If you don't choose, the bet remains for each round but with a smaller value. The winning line will result in a win based on the value of the symbol.</p>
+            <h3>Win Symbol Conditions</h3>
+			<p>The winning symbol is determined based on the combination of the same symbols in the vertical row (⚡⚡⚡). Certain symbols may have higher values ​​and lead to bigger wins.</p>
+            <h3>Symbol Value</h3>
+			<p>Each symbol has a certain value Rp.('🍒'=1.000, '🍋'=2.000, '🍊'=3.000, '🍉'=4.000, '🍇'=5.000, '⚡'=10.000) x ( 10 ). This value is used to calculate the total winnings from the combination of matching symbols.</p>
+            <h3>Amount of Winnings</h3>
+            <p>The winning amount is calculated based on matching symbols and the value of the bet placed. Total winnings are displayed after each spin.</p>
+            <h3>Special Wins</h3>
+			<p>You will get special symbols, which can get additional bonuses by multiplying the value of larger symbols.</p>
+			<p> ⚠special features that increase the total win are usually based on the balance amount or other means of the site builder used, for example, on this site I made it so that bigger wins are presented based on the balance used so this site is just a simulation.</p>
+			<p style="text-align:center;" ><i data="inside">Don't Baper By@gryrmd_sy</i></p>
+            <button id="close-info-panel-slot">x</button>
+        </div>
+		<div class="overlay"></div>
+			<div class="text">
+				<div class="wrapper">
+					<div id="L" class="letter">STOP</div>
+					<div class="shadow">STOP</div>
+				</div>
+				<div class="wrapper">
+					<div id="I" class="letter">GAMBLING</div>
+					<div class="shadow">GAMBLING</div>
+				</div>			
+			</div>
+        <div class="slot-machine">
+			<h3 id="user-name" translate="no"></h3>
+            <h3 id="balance">balance: Rp.0</h3>
+            <div class="reel" translate="no">
+                <div class="symbol" id="symbol1"></div>
+                <div class="symbol" id="symbol2"></div>
+                <div class="symbol" id="symbol3"></div>
+            </div>
+            <div class="reel" translate="no">
+                <div class="symbol" id="symbol4"></div>
+                <div class="symbol" id="symbol5"></div>
+                <div class="symbol" id="symbol6"></div>
+            </div>
+			<div class="reel" translate="no">
+                <div class="symbol" id="symbol7"></div>
+                <div class="symbol" id="symbol8"></div>
+                <div class="symbol" id="symbol9"></div>
+            </div>
+            <div class="bet-options">
+                <button class="bet-btn" data-amount="100000">bet Rp.100.000</button>
+                <button class="bet-btn" data-amount="200000">bet Rp.200.000</button>
+                <button class="bet-btn" data-amount="300000">bet Rp.300.000</button>
+            </div>
+            <div class="spin-options">
+                <button id="spin-one" class="spin-btn">spin 1 time</button>
+                <button id="spin-ten" class="spin-btn">spin 10 time</button>
+            </div>
+            <div id="message" class="hidden"></div>
+        </div>
+		<button id="logout-button">Logout</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
